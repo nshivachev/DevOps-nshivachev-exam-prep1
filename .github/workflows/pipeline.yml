@@ -47,7 +47,7 @@ jobs:
       run: npm run test:ui
 
   deploy_renderer:
-    needs: build-and-unit-test
+    needs: build-and-ui-test
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
